@@ -1,9 +1,88 @@
+* {
+	 padding: 0;
+	 margin: 0;
+}
+
 body{
     
     background-image: linear-gradient(to left top, #ff0075, #e0007f, #bd0086, #960089, #6a0088, #540589, #3a0b89, #071088, #0e198c, #14218f, #192893, #1f2f96);
+    background-color: black;
 }
+
+
+
+.header {
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    font-family: 'Anton', sans-serif;
+}
+
+.header.fixed {
+    opacity: 75%;
+    color: #000;
+    position: fixed;
+}
+
+
+ nav {
+	 /* margin: 25px; */
+	 background: #000;
+	 padding: 10px;
+     font-family: 'Anton', sans-serif;
+}
+ nav .menuItems {
+     margin-left: 70%;
+	 list-style: none;
+	 display: flex;
+}
+
+nav img{
+    height: 40px;
+    width: 40px;
+}
+ nav .menuItems li {
+	 margin: 10px;
+}
+ nav .menuItems li a {
+     font-family: 'Anton', sans-serif;
+	 text-decoration: none;
+	 color: #fff;
+	 font-size: 24px;
+	 font-weight: 400;
+	 transition: all 0.5s ease-in-out;
+	 position: relative;
+	 text-transform: uppercase;
+}
+ nav .menuItems li a::before {
+	 content: attr(data-item);
+	 transition: 0.5s;
+	 color: #ff0075;
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 width: 0;
+	 overflow: hidden;
+}
+ nav .menuItems li a:hover::before {
+	 width: 100%;
+	 transition: all 0.5s ease-in-out;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+}
+
 .banner{
-    height: 95vh;
+    margin-top: 10%;
+    margin-left: 10%;
+    height: 67vh;
     font-family: 'Anton', sans-serif;
     font-weight: 900;
     letter-spacing: 4px;
@@ -20,6 +99,13 @@ body{
 }
 .banner h3{
     color:#ff0075;
-    font-size: 32px;
+    font-size: 48px;
     letter-spacing: 4px;
+}
+
+.greet-img img{
+    margin-top: 5%;
+    margin-left: 10%;
+    height: 500px;
+    width: 500px;
 }
