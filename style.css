@@ -1,0 +1,25 @@
+body{
+    
+    background-image: linear-gradient(to left top, #ff0075, #e0007f, #bd0086, #960089, #6a0088, #540589, #3a0b89, #071088, #0e198c, #14218f, #192893, #1f2f96);
+}
+.banner{
+    height: 95vh;
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+.banner h1{
+    color: #fff;
+    font-size: 76px;
+    letter-spacing: 4px;
+}
+.banner h2{
+    color: #fff;
+    font-size: 64px;
+    letter-spacing: 4px;
+}
+.banner h3{
+    color:#ff0075;
+    font-size: 32px;
+    letter-spacing: 4px;
+}
