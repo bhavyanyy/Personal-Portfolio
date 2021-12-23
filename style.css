@@ -109,3 +109,16 @@ nav img{
     height: 500px;
     width: 500px;
 }
+.brand-name a{
+font-size: 35px;
+color: #fff;
+text-decoration: none;
+position: fixed;
+font-family: 'Anton', sans-serif;
+font-weight: 900;
+letter-spacing: 4px;
+}
+.icon{
+    height: 60px;
+    width: 60px;
+}
